@@ -1,4 +1,4 @@
-constacctBalanceLbl = document.getElementById("acctBalanceLbl");
+const acctBalanceLbl = document.getElementById("acctBalanceLbl");
 const deposits = [];
 const withdrawals = [];
 let totalBalance = 25;
