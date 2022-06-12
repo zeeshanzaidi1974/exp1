@@ -33,7 +33,7 @@ btnDeposit.addEventListener('click', () => {
     }
 }
     
-});
+);
 
 btnWithdraw.addEventListener('click', () => {
 
