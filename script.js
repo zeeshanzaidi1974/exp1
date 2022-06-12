@@ -12,9 +12,23 @@ function multiplyBy()
                       }
           if(num1=='1') 
 		      {    
-		          var Deposit = prompt("Enter the first number", "");
-		       
-		alert ( 'deposit' + Deposit) ;         
+		             	var Add_depositBTN = document.getElementById("  Add_depositBTN"  );
+				Add_depositBTN.addEventListener( 'click',function(){
+					
+							var deposit_input = document.getElementById(" deposit_input"  ).value;
+							var depositNewInput  = parseFloat(  deposit_input   );
+							var total_deposit = document.getElementById(" total-deposit"  ).innerHTML;
+							var Total_NewDeposit = parsFloat( total_deposit );
+							var Total_Deposit = depositNewInput + Total_NewDeposit;
+							
+							document.getElementById("total-deposit").innerHTML=Total_Deposit.toFixed(2);
+							
+							//change balance
+							var total_balance = document.getElementById("total-balance").innerHTML;
+							var NewTotal_balance = parseFloat(total_balance);
+							var Total_New_Balance = depositNewInput + NewTotal_balance;
+			        document.getElementById("total-balance").innerHTML= Total_New_Balance.toFixed(2);
+				});		  
 			}   
 			
 			NetBalance =              document.getElementById("").innerHTML = NetBalance + Deposit;
