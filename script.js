@@ -28,10 +28,11 @@ function multiplyBy()
 							var NewTotal_balance = parseFloat(total_balance);
 							var Total_New_Balance = depositNewInput + NewTotal_balance;
 			        document.getElementById("total-balance").innerHTML= Total_New_Balance.toFixed(2);
+                                                             alert ( 'account number is required'+total-balance);           
 				});		  
 			}   
 			
-			NetBalance =              document.getElementById("").innerHTML = NetBalance + Deposit;
+			     
 			
 			alert ( 'Net balance' + NetBalance) ;
            if(num1=='2') 
